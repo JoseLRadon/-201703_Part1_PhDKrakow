@@ -1,0 +1,183 @@
+\documentclass[xcolor=svgnames]{beamer}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+% LOADING BASIC PACKAGES
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english] {babel}
+\usepackage{amsmath,amsfonts,graphicx}
+\usepackage{beamerleanprogress}
+\usepackage{pstricks}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%        LOADING TIKZ LIBRARIES
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\usetikzlibrary{
+backgrounds,
+mindmap,
+shapes.arrows,
+positioning,
+}
+
+\tikzset{
+    myarrow/.style={
+        draw,
+        fill=orange,
+        single arrow,
+        minimum height=7.5ex,
+        single arrow head extend=1ex
+    }
+}
+\newcommand{\arrowup}{%
+\tikz [baseline=-0.5ex]{\node [myarrow,rotate=90] {};}
+}
+\newcommand{\arrowdown}{%
+\tikz [baseline=2ex]{\node [myarrow,rotate=-90] {};}
+}
+
+\tikzstyle{every picture}+=[remember picture]
+\tikzstyle{na} = [baseline=-.5ex]
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+% LOADING EXTRA PACKAGES
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+%\usepackage[colorlinks=false, urlcolor=blue, pdfborder={0 0 0}]{hyperref} 
+\usepackage{chngcntr}
+\usepackage{float}
+%\usepackage{titlepic}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{bibentry}
+\usepackage{wasysym, marvosym}
+
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+% SMART TABLES
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\setlength{\heavyrulewidth}{0.1 em}
+\newcommand{\otoprule}{\midrule [\heavyrulewidth]}
+\usepackage[small,bf]{caption}
+%\captionsetup[table,figure]{labelfont=bf,font=small}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+% NUMBERING CAPTIONS
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\setbeamertemplate{caption}[numbered]
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=
+% REMOVAL OF DEFAULT SYMBOL BIBLIOGRAPHY IN BEAMER CLASS
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=
+\setbeamertemplate{bibliography item}[text]
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+% INSERTING TEXT INSIDE BOXES
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\setbeamercolor{postit}{bg=yellow!70!green}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+% TO USE ACCENT IN "I" in Spanish
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+\newcommand{\1}{\'{\i}}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+% TITLE PAGE
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\title
+  [Feb 2016 \hspace{3cm} Krakow]
+  {General Introduction to Radioactivity}
+  
+\author
+  [J.L. Guti\'errez--Villanueva]
+  {Jos\'e - Luis Guti\'errez Villanueva}
+
+\date
+  {February 2016}
+
+\institute
+  {LaRUC,  University of Cantabria (Spain)}
+
+\titlegraphic{\includegraphics[scale=0.25]{laruc_logo}	}
+
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+% DOCUMENT
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\begin{document}
+
+\maketitle
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%
+%	TABLE OF CONTENTS: OVERVIEW
+%
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\section*{Overview}
+\begin{frame}{}
+% For longer presentations hideallsubsections
+\tableofcontents[hideallsubsections]
+\end{frame}
+
+%\input{introduction}
+
+\section{Radioactivity: fundamentals}
+
+\begin{frame}
+
+\end{frame}
+
+
+\end{document}
+
+
+%
+%  \begin{exampleblock}{Some more block}
+%    Movies only seem to work in Adobe Reader\par
+%    Movie file is not embedded, it must be on the computer
+%  \end{exampleblock}
+%
+%  \begin{alertblock}{}
+%    Some text in here.
+%    \begin{itemize}
+%    \item Movies only seem to work in Adobe Reader
+%    \item Movie file is not embedded, it must be on the computer
+%    \end{itemize}
+%  \end{alertblock}
+%\end{frame}
+
+
+
+%\section
+%  {Conclusion}
+%
+%\begin{frame}
+%  {Credits}
+%
+%  \begin{itemize}
+%  \item Brought to you by Cédric Mauclair
+%  \item Please let me know about improvements!
+%  \item inspiration: \url{http://www.shawnlankton.com}... (in code)
+%  \end{itemize}
+%\end{frame}
+
+
+%\begin{frame}
+%  {Questions}
+%
+%  \nocite{lorem,ipsum}
+%  \bibliographystyle{plain}
+%  \bibliography{demo}
+%
+%\end{frame}
+
+

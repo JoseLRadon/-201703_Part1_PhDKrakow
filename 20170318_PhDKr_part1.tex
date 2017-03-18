@@ -1,0 +1,257 @@
+%	Name			:: 	sthlm Beamer Theme  HEAVILY based on the hsrmbeamer theme (Benjamin Weiss)
+%	Author			:: 	Mark Hendry Olson (mark@hendryolson.com)
+%	Created			::	2013-07-31
+%	Updated	    	::	[[December]] 12, 2016 at 07:57:32
+%	Version			:: 	2.0.0
+%	Email			:: 	hendryolson@gmail.com
+%	Website			:: 	http://markolson.se
+%	Twitter			:: 	markolsonse
+%	Instagram		:: 	markolsonse
+%
+%	License			:: 	This file may be distributed and/or modified under the
+%					GNU Public License.
+%
+%	Description		::	This presentation is a demonstration of the sthlm beamer
+%					theme, which is HEAVILY based on the HSRM beamer theme created by Benjamin Weiss
+%					(benjamin.weiss@student.hs-rm.de), which can be found on GitHub
+%					<https://github.com/hsrmbeamertheme/hsrmbeamertheme>.  It also borrows heavily
+%					from the work of Matthias Vogelgesang, (https://bloerg.net) and his Metropolis Mtheme,
+%					<https://github.com/matze/mtheme>.
+%
+%	Theme			::	newPxFont
+%	Options			::	progressbar
+%					::	sectionpages
+%					::	numfooter
+%					::	fullfooter
+%					::	dovaligncolumns
+%					::	protectframetitle
+%					::	greybg
+%					::	cblock
+
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%
+%        LOADING DOCUMENT
+%
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\documentclass[newPxFont,numfooter,sectionpages]{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{sthlm}
+\usepackage{pgfplots}
+%\pgfplotsset{compat=1.14}
+\usepackage{cancel}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%
+%	PACKAGES
+%
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\usepackage[T1]      {fontenc}
+\usepackage[english] {babel}
+\usepackage{amsmath,amsfonts,graphicx}
+\usepackage{pstricks}
+\usepackage{chngcntr}
+\usepackage{float}
+%\usepackage{titlepic}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{bibentry}
+\usepackage{wasysym, marvosym}
+\usepackage{tabularx}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%        LOADING TIKZ LIBRARIES
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\usetikzlibrary{
+backgrounds,
+mindmap,
+shapes.arrows,
+positioning,
+}
+
+\tikzset{
+    myarrow/.style={
+        draw,
+        fill=orange,
+        single arrow,
+        minimum height=7.5ex,
+        single arrow head extend=1ex
+    }
+}
+\newcommand{\arrowup}{%
+\tikz [baseline=-0.5ex]{\node [myarrow,rotate=90] {};}
+}
+\newcommand{\arrowdown}{%
+\tikz [baseline=2ex]{\node [myarrow,rotate=-90] {};}
+}
+
+\tikzstyle{every picture}+=[remember picture]
+\tikzstyle{na} = [baseline=-.5ex]
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%
+%	SMART TABLES
+%
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\setlength{\heavyrulewidth}{0.1 em}
+\newcommand{\otoprule}{\midrule [\heavyrulewidth]}
+\usepackage[small,bf]{caption}
+%\captionsetup[table,figure]{labelfont=bf,font=small}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%
+%	OTHER
+%
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\definecolor{links}{HTML}{0A1EF5}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+%%% To number captions of tables and figures
+\setbeamertemplate{caption}[numbered]
+
+%%% To erase the default symbol in bibliography
+\setbeamertemplate{bibliography item}[text]
+
+%%% To insert text inside boxes
+\setbeamercolor{postit}{bg=yellow!70!green}
+
+\newcommand{\1}{\'{\i}}
+
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%
+%	PRESENTATION INFORMATION
+%
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\title{Radioactivity}
+\subtitle{Historical review; fundamentals; artificial and natural}
+\date{\today}
+\author{\texttt{J.L. Guti\'errez--Villanueva}}
+\institute{LaRUC--Radon group \par U. Cantabria (Spain)}
+
+\hypersetup{
+pdfauthor = {J.L. Gutierrez-Villanueva: gutierrez.joseluis@icloud.com},
+pdfsubject = {Beamer},
+pdfkeywords = {Beamer theme, sthlm},
+pdfmoddate= {D:\pdfdate},
+pdfcreator = {}
+}
+
+%----------------------------------------------------------------------------------------------------------------
+% Customization of itemize environment -------------------------------
+% The following code restores default beamer itemize for bullets 
+% It is possible to customize left margin in itemize environment using the option [leftmargin=3cm]
+%----------------------------------------------------------------------------------------------------------------
+
+
+\usepackage{enumitem}
+\setitemize{label=\usebeamerfont*{itemize item}%
+  \usebeamercolor[fg]{itemize item}
+  \usebeamertemplate{itemize item}}
+
+\begin{document}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%
+%	TITLE PAGE
+%
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\maketitle
+
+
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%
+%	TABLE OF CONTENTS: OVERVIEW
+%
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\section*{Overview}
+\begin{frame}{Overview}
+% For longer presentations use hideallsubsections option
+\tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{General Information}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%	FRAME:
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\begin{frame}[c]{About me}
+
+\begin{itemize}
+
+\item Jos\'e -- Luis Guti\'errez--Villanueva
+%\item Paseo Juan Carlos I, 11, 9D. 47013 Valladolid (SPAIN)
+\item Phone: (+34) 696724428
+%%% Social
+\item \href{mailto:gutierrez.joseluis@icloud.com}{gutierrez.joseluis@icloud.com}
+\item  www.linkedin.com/in/gutierrez-joseluis
+\item skype: joselgvillanueva
+
+\end{itemize}
+
+\pause \centering \includegraphics[scale=0.05]{family.JPG}
+
+\end{frame}
+
+\begingroup
+\setbeamercolor{frametitle}{bg=\cnGreen}
+\setbeamercolor{normal text}{fg=\cnDarkGrey,bg=\cnLightGreen}
+
+\begin{frame}{Education}
+
+\begin{alertblock}{B.Sc. in Physics}
+University of Valladolid \\     Valladolid, Spain \\     Sept. 1995 - Feb. 2002
+\end{alertblock}
+
+\begin{alertblock}{PhD. in Physics}
+University of Valladolid \\     Valladolid, Spain \\     Mar. 2002 - Jul. 2008 \\ \emph{Thesis entitled: Radon concentrations in air, soil and water in a granitic area: instrumental development \- and measurements}
+\end{alertblock}
+
+\end{frame}
+
+
+\endgroup
+
+\input{introduction}
+
+%
+%\input{Radioactivityfundamentals}
+%%
+%\input{detectionmethods}
+%%
+%\input{doses}
+
+%\begin{frame}{Tack s\aa\, mycket !!!}
+%
+%\begin{figure}
+%\centering
+%\includegraphics[scale=0.4]{sthlm.jpg}
+%\end{figure}
+%
+%
+%
+%\end{frame}
+
+\begin{frame}
+
+\begin{figure}
+
+\href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{\includegraphics[scale=0.4]{figures/By_nc_sa_bw.png}}
+
+\end{figure}
+
+\end{frame}
+
+
+\end{document}

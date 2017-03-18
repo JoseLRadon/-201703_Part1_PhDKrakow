@@ -1,0 +1,184 @@
+\documentclass[xcolor=svgnames]{beamer}
+
+\usepackage[utf8]    {inputenc}
+\usepackage[T1]      {fontenc}
+\usepackage[english] {babel}
+
+\usepackage{amsmath,amsfonts,graphicx}
+\usepackage{beamerleanprogress}
+
+\usepackage{pstricks}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%        LOADING TIKZ LIBRARIES
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\usetikzlibrary{
+backgrounds,
+mindmap,
+shapes.arrows,
+positioning,
+}
+
+\tikzset{
+    myarrow/.style={
+        draw,
+        fill=orange,
+        single arrow,
+        minimum height=7.5ex,
+        single arrow head extend=1ex
+    }
+}
+\newcommand{\arrowup}{%
+\tikz [baseline=-0.5ex]{\node [myarrow,rotate=90] {};}
+}
+\newcommand{\arrowdown}{%
+\tikz [baseline=2ex]{\node [myarrow,rotate=-90] {};}
+}
+
+\tikzstyle{every picture}+=[remember picture]
+\tikzstyle{na} = [baseline=-.5ex]
+
+%\usepackage[colorlinks=false, urlcolor=blue, pdfborder={0 0 0}]{hyperref} 
+\usepackage{chngcntr}
+\usepackage{float}
+%\usepackage{titlepic}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{dcolumn}
+
+\usepackage{bibentry}
+
+\usepackage{wasysym, marvosym}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% TABLAS ELEGANTES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\heavyrulewidth}{0.1 em}
+\newcommand{\otoprule}{\midrule [\heavyrulewidth]}
+\usepackage[small,bf]{caption}
+%\captionsetup[table,figure]{labelfont=bf,font=small}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Para numerar las tablas y figuras en captions
+\setbeamertemplate{caption}[numbered]
+
+%%% Para quitar el molesto simbolito del documento en la bibliografia
+\setbeamertemplate{bibliography item}[text]
+
+%%% Para poner texto dentro de cajas
+\setbeamercolor{postit}{bg=yellow!70!green}
+
+\newcommand{\1}{\'{\i}}
+
+\title
+  [Seminar NUI - Jan 2016\hspace{2em}]
+  {Radon, our radioactive roommate: past, present,  and future}
+  
+  
+
+
+\author
+  [Jos\'e Luis Guti\'errez Villanueva]
+  {Jos\'e - Luis Guti\'errez Villanueva}
+
+\date
+  {27th January 2016}
+
+\institute
+  {LaRUC,  University of Cantabria (Spain)}
+
+\titlegraphic{\includegraphics[scale=0.25]{laruc_logo}	}
+
+
+\begin{document}
+
+\maketitle
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%
+%	TABLE OF CONTENTS: OVERVIEW
+%
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\section*{Overview}
+\begin{frame}{}
+% For longer presentations hideallsubsections
+\tableofcontents[hideallsubsections]
+\end{frame}
+
+\input{IntroductionLaRUC}
+\input{Introductionradon}
+\input{radonregulation}
+\input{measurementtechniques}
+\input{Radontracer}
+\input{ERA}
+
+
+
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+
+
+%
+%  \begin{exampleblock}{Some more block}
+%    Movies only seem to work in Adobe Reader\par
+%    Movie file is not embedded, it must be on the computer
+%  \end{exampleblock}
+%
+%  \begin{alertblock}{}
+%    Some text in here.
+%    \begin{itemize}
+%    \item Movies only seem to work in Adobe Reader
+%    \item Movie file is not embedded, it must be on the computer
+%    \end{itemize}
+%  \end{alertblock}
+%\end{frame}
+
+
+
+%\section
+%  {Conclusion}
+%
+%\begin{frame}
+%  {Credits}
+%
+%  \begin{itemize}
+%  \item Brought to you by Cédric Mauclair
+%  \item Please let me know about improvements!
+%  \item inspiration: \url{http://www.shawnlankton.com}... (in code)
+%  \end{itemize}
+%\end{frame}
+
+
+%\begin{frame}
+%  {Questions}
+%
+%  \nocite{lorem,ipsum}
+%  \bibliographystyle{plain}
+%  \bibliography{demo}
+%
+%\end{frame}
+
+\begin{frame}{Thank you -- go raibh maith agat}
+
+\centering
+\includegraphics[scale=0.4]{figures/20160126_rpw_cliffsmoher.jpg}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{figure}
+
+\href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{\includegraphics[scale=0.4]{figures/By_nc_sa_bw.png}}
+
+\end{figure}
+
+\end{frame}
+
+\end{document}
+
