@@ -1,10 +1,10 @@
 \section{Radioactivity: Detection methods}
 
-\frame{\tableofcontents[currentsection]}
+%\frame{\tableofcontents[currentsection]}
 
-\begin{frame}{Reflecting \ldots}
+\begin{frame}{Thinking over \ldots}
 
-\begin{exampleblock}{}
+\begin{exampleblock}{Key questions}
 
 \begin{itemize}
 	\item What do we need to measure? 
@@ -14,11 +14,10 @@
 
 \end{exampleblock}
 
-\vskip0.5cm
-\pause
-\centering \alert{Boundary conditions}
 
-\begin{alertblock}{}
+\pause
+
+\begin{alertblock}{Boundary conditions}
 
 \begin{itemize}
 	\item Facilities
@@ -49,9 +48,9 @@
 
 \end{frame}
 
-\begin{frame}{Alpha spectrometry}
+\begin{frame}[allowframebreaks]{Alpha spectrometry}
 
-\begin{exampleblock}{}
+\begin{exampleblock}{Characteristics}
 
 \begin{itemize}
 	\item High resolution surface barrier detectors
@@ -63,7 +62,7 @@
 
 \end{exampleblock}
 
-\begin{alertblock}{}
+\begin{alertblock}{Problems}
 
 \begin{itemize}
 	\item Radiochemistry (separation)
@@ -75,18 +74,18 @@
 
 \end{alertblock}
 
-\end{frame}
-
-\begin{frame}{Alpha spectrometry}
+%\end{frame}
+%
+%\begin{frame}{Alpha spectrometry}
 
 \centering
 \includegraphics[scale=0.8]{figures/alpha_device.png}
 
 \end{frame}
 
-\begin{frame}{LIQUID SCINTILLATION COUNTING }
+\begin{frame}[allowframebreaks]{LIQUID SCINTILLATION COUNTING }
 
-\begin{exampleblock}{}
+\begin{exampleblock}{Characteristics}
 
 \begin{itemize}
 	\item $\alpha$/$\beta$ Discrimation
@@ -97,7 +96,7 @@
 
 \end{exampleblock}
 
-\begin{alertblock}{}
+\begin{alertblock}{Problems}
 
 \begin{itemize}
 	\item Problems with spillover
@@ -108,18 +107,18 @@
 
 \end{alertblock}
 
-\end{frame}
-
-\begin{frame}{LIQUID SCINTILLATION COUNTING }
+%\end{frame}
+%
+%\begin{frame}{LIQUID SCINTILLATION COUNTING }
 
 \centering
 \includegraphics[scale=0.5]{figures/quantulus.png}
 
 \end{frame}
 
-\begin{frame}{Gamma spectrometry}
+\begin{frame}[allowframebreaks]{Gamma spectrometry}
 
-\begin{exampleblock}{}
+\begin{exampleblock}{Characteristics}
 
 \begin{itemize}
 	\item Instrumentation (HPGe) available in most of labs 
@@ -131,7 +130,7 @@
 
 \end{exampleblock}
 
-\begin{alertblock}{}
+\begin{alertblock}{Problems}
 
 \begin{itemize}
 	\item Each geometry needs different efficiency calibration
@@ -143,9 +142,9 @@
 
 \end{alertblock}
 
-\end{frame}
-
-\begin{frame}{Gamma spectrometry}
+%\end{frame}
+%
+%\begin{frame}{Gamma spectrometry}
 
 \centering
 \includegraphics[scale=0.7]{figures/hpgelaruc.png}
@@ -164,11 +163,10 @@
 
 \end{frame}
 
-\begin{frame}{Short intro to gamma spectrometry}
+\begin{frame}[allowframebreaks]{Short intro to gamma spectrometry}
 
-\alert{Gammna decay: Photon’s emission by a nucleus when reaching steady state of energy}
 
-\begin{exampleblock}{}
+\begin{exampleblock}{Gammna decay: Photon’s emission by a nucleus when reaching steady state of energy}
 
 \begin{itemize}
 	\item Gamma line is the fingerprint of a radionuclide 
@@ -180,57 +178,53 @@
 
 \end{exampleblock}
 
-\pause
-\begin{block}{}
-\centering Interaction of radiation (photon) with matter (detection’s material)
-\end{block}
 
-\end{frame}
+\begin{exampleblock}{INTERACTION OF RADIATION WITH MATTER}
 
-\begin{frame}{Short intro to gamma spectrometry}
 
-\centering {\large \textbf{INTERACTION OF RADIATION WITH MATTER}}
-
-\begin{exampleblock}{}
-
-{\small
 \begin{itemize}
 \item Charged particles produce a signal within a detector by ionization and excitation of the detector material directly. 
 \item Gamma photons are uncharged and consequently cannot do this 
 \item Gamma-ray detection depends upon other types of interaction which transfer the gamma-ray energy to electrons within the detector material 
+\end{itemize}
+
+\end{exampleblock}
+
+\begin{exampleblock}{INTERACTION OF RADIATION WITH MATTER}
+
+
+\begin{itemize}
 \item Excited electrons charge and lose their energy by ionization and excitation of the atoms of the detector medium, giving rise to many electron–hole pairs 
 \item The absorption coefficient for gamma radiation in gases is low and all practical gamma ray detectors depend upon interaction with a solid 
 \item The electron–hole pairs can be collected and presented as an electrical signal.
 \end{itemize}
-}
+
 \end{exampleblock}
 
 \end{frame}
 
-\begin{frame}{Short intro to gamma spectrometry}
+\begingroup
 
-\centering {\large \textbf{INTERACTION OF RADIATION WITH MATTER}}
-
-\pause
-\begin{block}{}
-\centering PHOTOELECTRIC EFFECT
-\end{block}
+\setbeamercolor{normal text}{fg=\cnDarkGrey,bg=\cnLightGreen}
+\begin{frame}{How do radiation and matter interact?}
 
 \pause
-\begin{block}{}
-\centering COMPTON EFFECT
-\end{block}
+
+\setbeamercolor{boxsthlmBlue}{bg=\cnBlue,fg=white}\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmBlue}\centering PHOTOELECTRIC EFFECT\end{beamercolorbox}
 
 \pause
-\begin{block}{}
-\centering PAIR PRODUCTION
-\end{block}
+
+\setbeamercolor{boxsthlmBlue}{bg=\cnBlue,fg=white}\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmBlue}\centering COMPTON EFFECT\end{beamercolorbox}
+
+\pause
+
+\setbeamercolor{boxsthlmBlue}{bg=\cnBlue,fg=white}\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmBlue}\centering PAIR PRODUCTION \end{beamercolorbox}
+
 
 \end{frame}
+\endgroup
 
-\begin{frame}{Short intro to gamma spectrometry}
-
-{\centering {\large \textbf{PHOTOELECTRIC EFFECT}}}
+\begin{frame}{PHOTOELECTRIC EFFECT}
 
 \vskip0.3cm
 \alert{The photon interacts with the atom and gives ALL its energy to one electron: one part of the energy is used as kinetic energy and the rest is used to remove electron from the atom}
@@ -241,12 +235,10 @@
 
 \end{frame}
 
-\begin{frame}{Short intro to gamma spectrometry}
-
-{\centering {\large \textbf{COMPTON EFFECT}}}
+\begin{frame}{COMPTON EFFECT}
 
 \vskip0.3cm
-\begin{exampleblock}{}
+\begin{exampleblock}{Characteristics}
 
 \begin{itemize}
 \item ``Elastic collision'': pool balls 
@@ -263,12 +255,10 @@
 \end{frame}
 
 
-\begin{frame}{Short intro to gamma spectrometry}
-
-{\centering {\large \textbf{PAIR PRODUCTION}}}
+\begin{frame}{PAIR PRODUCTION}
 
 \vskip0.3cm
-\begin{exampleblock}{}
+\begin{exampleblock}{Characteristics}
 
 \begin{itemize}
 \item When the photon with energy in excess of 1.02 MeV passes close to the nucleus of an atom, the photon disappears, and a positron (e$^{+}$) and an electron (e$^{-}$) appear 
@@ -282,9 +272,9 @@
 
 \end{frame}
 
-\begin{frame}{Short intro to gamma spectrometry}
+\begin{frame}{Interaction radiation and matter}
 
-\begin{exampleblock}{}
+\begin{exampleblock}{Key facts}
 
 \begin{itemize}
 \item Photoelectric interactions are dominant at low energy 
@@ -297,36 +287,32 @@
 
 \end{frame}
 
-\begin{frame}{Short intro to gamma spectrometry}
+\begin{frame}[allowframebreaks]{Let's study one spectrum}
 \centering
 \includegraphics[scale=0.6]{figures/gammaspecexample.png}
-\end{frame}
 
-\begin{frame}{Short intro to gamma spectrometry}
 
-\begin{exampleblock}{}
+\begin{exampleblock}{What can we infere?}
 
 {\small
 \begin{itemize}
 \item Counts to appear in the spectrum above the full energy peak (apart from the natural background): due to random summing or pile-up, determined by the statistical probability of two gamma-rays being detected at the same time and therefore on the sample count rate 
 \item The most troublesome photoelectric interactions will be those with the shielding, usually lead. There is a significant possibility that this fluorescent X-ray may escape the shielding and that it will be detected by the detector: generation of a number of X-ray peaks in the gamma spectrum in the region 70–85 keV (problems for low energy measurements that may be solved with Cd and Cu) 
-\item The normal geometric arrangement of source–detector shielding means that most gamma-rays are scattered through a large angle by the shielding: backscattering (difficult to solve)
 \end{itemize}
 }
 \end{exampleblock}
 
-\end{frame}
-
-\begin{frame}{Short intro to gamma spectrometry}
-
-\begin{exampleblock}{}
+\begin{exampleblock}{What can we infere?}
 
 {\small
 \begin{itemize}
+\item The normal geometric arrangement of source–detector shielding means that most gamma-rays are scattered through a large angle by the shielding: backscattering (difficult to solve)
 \item Pair production: surroundings of the detector give rise to the annihilation peak at 511 keV in the spectrum. This is caused by the escape of one of the 511 keV photons from the shielding, following annihilation of the pair production positron. The annihilation peak is clearly visible in the spectrum of $^{28}$Al (see Figure) but not in that of $^{137}$Cs \alert{(Why?})
 \end{itemize}
 }
 \end{exampleblock}
+
+
 
 \centering
 \includegraphics[scale=0.6]{figures/specal28.png}
@@ -336,7 +322,6 @@
 
 \begin{frame}{Practical points gamma detection}
 
-\begin{exampleblock}{}
 
 {\small
 \begin{itemize}
@@ -346,23 +331,22 @@
 \item Decay schemes give vital information on whether gammas are in ‘cascade’. This has great significance in true coincidence summing.
 \end{itemize}
 }
-\end{exampleblock}
+
 
 \end{frame}
 
 \begin{frame}{Practical points detection systems}
 
-\begin{block}{}
-Radiation INTERACTS with matter (detector's material)
-\end{block}
+\setbeamercolor{boxsthlmBlue}{bg=\cnBlue,fg=white}\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmBlue}\centering Radiation INTERACTS with matter (detector's material)\end{beamercolorbox}
+
 
 \pause
 \centering \arrowdown
 
 \pause
-\begin{block}{}
-We must \emph{translate} this interaction into an electrical signal that we are able to measure
-\end{block}
+\setbeamercolor{boxsthlmBlue}{bg=\cnBlue,fg=white}\begin{beamercolorbox}[wd=\linewidth,ht=5ex,dp=3ex]{boxsthlmBlue}\centering We must \emph{translate} this interaction into an electrical signal that we are able to measure\end{beamercolorbox}
+
+
 
 \end{frame}
 
@@ -370,7 +354,7 @@ We must \emph{translate} this interaction into an electrical signal that we are 
 
 \begin{frame}{Ideal properties of gamma spectrometry detector}
 
-\begin{exampleblock}{}
+
 {\small
 \begin{itemize}
 \item Output proportional to gamma-ray energy 
@@ -382,7 +366,7 @@ We must \emph{translate} this interaction into an electrical signal that we are 
 \item reasonable size
 \end{itemize}
 }
-\end{exampleblock}
+
 
 \end{frame}
 
@@ -395,7 +379,7 @@ We must \emph{translate} this interaction into an electrical signal that we are 
 
 \begin{frame}{Charge carriers}
 
-\begin{exampleblock}{}
+
 {\small
 \begin{itemize}
 \item The interaction of a gamma-ray with the semiconductor material will produce primary electrons with energies considerably greater than thermal energies 
@@ -405,13 +389,13 @@ We must \emph{translate} this interaction into an electrical signal that we are 
 \item Avoid trapping centres which can make difficult mobility of carriers: the detector material must be available, at reasonable cost, with a high purity and as near perfect as possible crystalline state
 \end{itemize}
 }
-\end{exampleblock}
+
 
 \end{frame}
 
 \begin{frame}{Suitable materials?}
 
-\begin{exampleblock}{}
+
 {\small
 \begin{itemize}
 \item To have as large an absorption coefficient as possible (i.e. high atomic number)
@@ -421,15 +405,15 @@ We must \emph{translate} this interaction into an electrical signal that we are 
 \item To be available in reasonable amounts at reasonable cost.
 \end{itemize}
 }
-\end{exampleblock}
+
 
 \end{frame}
 
-\begin{frame}{Type of HPGe detectors}
+\begin{frame}[allowframebreaks]{Type of HPGe detectors}
 
 \alert{Intrinsic semiconductor: A semiconductor material containing equal numbers of electrons and holes}
 
-\begin{exampleblock}{}
+
 {\small
 \begin{itemize}
 \item acceptor impurities when distributed throughout the semiconductor material give rise to extra energy states just above the valence band, called acceptor states. Germanium with this type of impurity would be called p-type germanium (‘p’ for positive acceptor impurities) 
@@ -437,49 +421,36 @@ We must \emph{translate} this interaction into an electrical signal that we are 
 \item The p-type material has an excess of holes and the n-type an excess of electrons.
 \end{itemize}
 }
-\end{exampleblock}
 
-
-\end{frame}
-
-\begin{frame}{Type of HPGe detectors}
 
 \centering
 \includegraphics[scale=0.3]{figures/typehpge.png}
 
 \end{frame}
 
-\begin{frame}{HPGe detectors}
+\begin{frame}[allowframebreaks]{HPGe detectors}
 
-\begin{block}{}
-GERMANIUM DETECTORS ARE OPERATED AT LOW TEMPERATURE IN ORDER TO REDUCE ELECTRONIC NOISE AND THEREBY ACHIEVE AS HIGH A RESOLUTION AS POSSIBLE
-\end{block}
+\setbeamercolor{boxsthlmBlue}{bg=\cnBlue,fg=white}\begin{beamercolorbox}[wd=\linewidth,ht=10ex,dp=3ex]{boxsthlmBlue}\centering Germanium detectors are operated at low temperature in order to reduce electronic noise and thereby achieve as high a resolution as possible\end{beamercolorbox}
 
 \centering \arrowdown
 
-\begin{block}
-The most common means of providing a suitably low temperature is cooling with liquid nitrogen (boiling point 77 K).
-\end{block}
+\setbeamercolor{boxsthlmBlue}{bg=\cnBlue,fg=white}\begin{beamercolorbox}[wd=\linewidth,ht=6ex,dp=3ex]{boxsthlmBlue}\centering The most common means of providing a suitably low temperature is cooling with liquid nitrogen (boiling point 77 K)\end{beamercolorbox}
 
-\end{frame}
 
-\begin{frame}{HPGe detectors}
-
-\centering
+\begin{figure}
 \includegraphics[scale=0.4]{figures/schemehpge.png}
+\end{figure}
 
 \end{frame}
 
-\begin{frame}{HPGe detectors}
-
-\centering
+\begin{frame}{HPGe detectors: example}
+\begin{figure}
 \includegraphics[scale=0.25]{figures/hpgelaruc2.png}
-
+\end{figure}
 \end{frame}
 
-\begin{frame}{HPGe detectors}
+\begin{frame}{HPGe detectors: Detection system}
 
-\centering {\large \textbf{HPGe detectors: Detection system}}
 
 \centering
 \includegraphics[scale=0.25]{figures/detectionsystem.png}
@@ -488,14 +459,14 @@ The most common means of providing a suitably low temperature is cooling with li
 
 \begin{frame}{HPGe detectors}
 
-\begin{exampleblock}{}
+
 
 \begin{itemize}
 \item The detector produces a signal proportional to the energy emitted by the source
 \item The measuring equipment accumulates on each channel the number of emissions corresponding to a certain energy
 \end{itemize}
 
-\end{exampleblock}
+
 
 \pause
 \begin{table}
@@ -508,7 +479,7 @@ The most common means of providing a suitably low temperature is cooling with li
 
 \begin{frame}{HPGe detectors: MCA (Multichannel analyzer)}
 
-\begin{exampleblock}{}
+
 {\small 
 \begin{itemize}
 \item From the output from the amplifier, it rejects out-of-range pulses
@@ -517,7 +488,7 @@ The most common means of providing a suitably low temperature is cooling with li
 \item In principle, the relationship between pulse height (and therefore energy) and channel number would be exactly linear, passing through zero
 \end{itemize}
 }
-\end{exampleblock}
+
 
 
 \end{frame}
@@ -531,12 +502,12 @@ The most common means of providing a suitably low temperature is cooling with li
 
 \begin{frame}{HPGe detectors: MCA terms and definitions}
 
-\begin{flushright}
 
 
-\begin{minipage}{0.7\textwidth}
+
+
 {\scriptsize 
-\begin{itemize}
+\begin{itemize}[leftmargin=3.5cm]
 \item[Lower level discriminator (LLD)] pulses below this level will not be analysed. Use this to reject electronic noise and low-energy X-rays
 \item [Upper level discriminator (ULD)] pulses above this level will not be analysed. Use this to reject very high energy pulses. This will often be left at its maximum, but still performs a useful function in rejecting high- energycosmic gamma-rays
 \item [ADC zero level]  use this to adjust the energy calibration so that it passes through 0 keV. Not ideal for eliminating the effect of noise
@@ -546,8 +517,8 @@ The most common means of providing a suitably low temperature is cooling with li
 \item [ADC conversion gain] is simply the number of channels actually used in a particular application – in everyday parlance, the spectrum size
 \end{itemize}
 }
-\end{minipage}
-\end{flushright}
+
+
 
 
 \end{frame}
@@ -555,7 +526,7 @@ The most common means of providing a suitably low temperature is cooling with li
 \begin{frame}{Standards, calibrations}
 
 {\small
-\begin{itemize}
+\begin{itemize}[leftmargin=3cm]
 \item[Geometry] the standard source shall have the same geometry as the sample to be measured. 
 \item[Geometry] the standard radioactivy source shall be homogeneously distributed 
 \item[Position] centered position
@@ -590,25 +561,22 @@ The most common means of providing a suitably low temperature is cooling with li
 
 \begin{frame}{Calibration steps}
 
-\begin{block}{}
-Calibration energy versus channel 
-\end{block}
+\setbeamercolor{boxsthlmBlue}{bg=\cnBlue,fg=white}\begin{beamercolorbox}[wd=\linewidth,ht=3ex,dp=3ex]{boxsthlmBlue}\centering Calibration energy versus channel  \end{beamercolorbox}
+
 
 %\vskip5cm
+\setbeamercolor{boxsthlmBlue}{bg=\cnBlue,fg=white}\begin{beamercolorbox}[wd=\linewidth,ht=3ex,dp=3ex]{boxsthlmBlue}\centering Calibration efficiency versus enery \end{beamercolorbox}
 
-\begin{block}{}
-Calibration efficiency versus enery 
-\end{block}
 
 \end{frame}
 
 \begin{frame}{Energy vs. channel}
 
-\alert{The object of energy calibration is to derive a relationship between peak position in the spectrum and the corresponding gamma-ray energy}
+\alert{The objective of energy calibration is to derive a relationship between peak position in the spectrum and the corresponding gamma-ray energy}
 
-\begin{block}{}
+
 Energy calibration is accomplished by measuring the spectrum of a source emitting gamma-rays of precisely known energy and comparing the measured peak position with energy. It matters not whether the source contains a single nuclide or several nuclides: $^{152}$Eu source for routine energy calibration
-\end{block}
+
 
 \end{frame}
 
@@ -676,27 +644,25 @@ Energy calibration is accomplished by measuring the spectrum of a source emittin
 
 \begin{frame}{How to calculate activity}
 
-\begin{block}{}
-\centering \textbf{COUNTS}
-\end{block}
+\setbeamercolor{boxsthlmBlue}{bg=\cnBlue,fg=white}\begin{beamercolorbox}[wd=\linewidth,ht=3ex,dp=3ex]{boxsthlmBlue}\centering COUNTS\end{beamercolorbox}
+
+
 
 \centering \arrowdown
 
-\begin{block}{}
-\centering \textbf{ACTIVITY (Bq kg$^{-1}$; Bq l$^{-1}$ \ldots)}
-\end{block}
+\setbeamercolor{boxsthlmBlue}{bg=\cnBlue,fg=white}\begin{beamercolorbox}[wd=\linewidth,ht=3ex,dp=3ex]{boxsthlmBlue}\centering ACTIVITY (Bq kg$^{-1}$; Bq l$^{-1}$ \ldots)\end{beamercolorbox}
+
 
 \end{frame}
 
 
 \begin{frame}{How to calculate activity}
 
-\begin{block}{}
+
 \centering 
 \[A = \frac{I}{T\cdot \epsilon \cdot P \cdot X}\]
-\end{block}
 
-\begin{block}{}
+
 
 \begin{itemize}
 \item $A$: activity expressed in Bq kg$^{-1}$; Bq l$^{-1}$ \ldots
@@ -709,7 +675,7 @@ Energy calibration is accomplished by measuring the spectrum of a source emittin
 
 In some cases it is necessary to include corrections due to radioactivity decay, summing effects, etc.
 
-\end{block}
+
 
 \end{frame}
 
@@ -755,7 +721,7 @@ In principle, the statistics of radioactive decay are binomial in nature. If we 
 
 \begin{frame}{Learnings so far}
 
-\begin{alertblock}{}
+\begin{alertblock}{Let's remember}
 
 \begin{itemize}
 
